@@ -335,8 +335,7 @@ footer{
     }
 
     header{
-        background-image: linear-gradient(to bottom, #232526, #414345);
-        display: flex;
+        background-image: linear-gradient(to bottom, #232526, #414345);        display: flex;
         flex-direction: row;
         align-items: center;
     }
@@ -365,6 +364,11 @@ footer{
         text-decoration: none;
         font-family: 'Roboto', sans-serif;
         font-weight: lighter;
+        transition: font-weight 2;
+    }
+
+    .linkNav:hover{
+        font-weight: bold;
     }
     
     /* INDEX */
@@ -590,8 +594,7 @@ footer{
     
     footer{
         width: 100%;
-        background-image: linear-gradient(to top, #232526, #414345);
-        display: flex;
+        background-image: linear-gradient(to bottom, #232526, #414345);        display: flex;
         flex-direction: row;
         position: fixed;
         bottom: 0;
@@ -675,6 +678,11 @@ ul{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
+    transition: font-weight 2;
+}
+
+.linkNav:hover{
+    font-weight: bold;
 }
 
 /* INDEX */
