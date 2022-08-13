@@ -1,0 +1,5 @@
+<?xml version="1.0" ?><svg id="Calendar" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+	.st0{fill:#E4EDF2;}
+	.st1{fill:#F25949;}
+	.st2{fill:#393B3D;}
+</style><g><path class="st0" d="M2,11.97v13.96C2,28.18,3.82,30,6.07,30h19.86c2.25,0,4.07-1.82,4.07-4.07V11.97H2z"/><path class="st1" d="M29,3.96h-5.5v2.959c0,0.552-0.447,1-1,1s-1-0.448-1-1V3.96h-11v2.959c0,0.552-0.448,1-1,1s-1-0.448-1-1V3.96   H3c-0.55,0-1,0.45-1,1v7.01h28V4.96C30,4.41,29.55,3.96,29,3.96z"/><path class="st2" d="M9.5,7.919c0.552,0,1-0.448,1-1V3.96V3c0-0.552-0.448-1-1-1s-1,0.448-1,1v0.96v2.959   C8.5,7.472,8.948,7.919,9.5,7.919z"/><path class="st2" d="M22.5,7.919c0.553,0,1-0.448,1-1V3.96V3c0-0.552-0.447-1-1-1s-1,0.448-1,1v0.96v2.959   C21.5,7.472,21.947,7.919,22.5,7.919z"/></g></svg>

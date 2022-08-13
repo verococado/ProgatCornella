@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="envoltura"></div>
+    <header>
+        <img class="logo" src="../imagenes/logoBlanco.png" alt="logoProgatCornella">
+        <nav>
+            <ul>
+                <li><a class="linkNav" href="../index.html">Inicio</a></li>
+                <li><a class="linkNav" href="./noticias.html">Noticias</a></li>
+                <li><a class="linkNav" href="./adopta.html">Adopta</a></li>
+                <li><a class="linkNav" href="./colabora.html">Colabora</a></li>
+                <li><a class="linkNav" href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contactgrid">  
+            <h2 class="contactotitulo">¡Ponte en contacto con nosotros!</h2> 
+                    <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Nombre">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" placeholder="hola@gmail.com" name="email">
+                    <label for="Observaciones">Mensaje<br></label>
+                    <textarea placeholder="Observaciones"></textarea>
+                    <p class="cuesmotivo">Motivo principal de tu mensaje</p>
+                    <div class="marcar"> Adoptar <input class="rellenar" type="radio" name="lado" value="adoptar"></div>
+                    <div class="marcar">Colaborar <input class="rellenar" type="radio" name="lado" value="colaborar"></div>
+                    <div class="marcar">Otros <input class="rellenar" type="radio" name="lado" value="otros"></div>
+                    <div class="cuesmotivo">¿Quieres recibir información sobre nosotros?</div>
+                    <input class="narcar" type="checkbox" name="acepta" value="1">
+                    <input class="cuesmotivo" type="submit" value="ENVIAR">
+                    <input class="cuesmotivo" type="reset" value="BORRAR">
+        </section>
+    </main>
+    <footer>
+        <section class="localizacion">
+            <img class="localizacionIcono" src="../imagenes/iconoLocalizacion.svg" alt="localizacion">
+            <p class="localizacionSitio">Cornellà de Llobregat</p>
+        </section>
+        <section class="redes">
+            <a href="https://es-es.facebook.com/progat.cornella"><img class="redesSociales" src="../imagenes/logoFacebook.svg" alt="iconoFacebook"></a>
+            <a href="https://instagram.com/progatcornella?igshid=YmMyMTA2M2Y="><img class="redesSociales" src="../imagenes/logoInstagram.svg" alt="iconoInstagram"></a>
+            <a href="https://www.amazon.es/hz/wishlist/ls/3PW6UVBPVPDXW?ref_=wl_share"><img class="redesSociales" src="../imagenes/iconoAmazon.svg" alt="iconoAmazon"></a>
+        </section>
+    </footer>
+</div>
+</body>
+</html>
