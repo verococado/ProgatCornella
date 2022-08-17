@@ -6,20 +6,6 @@
 }
 
 header{
-    grid-area: header;
-}
-
-.main{
-    grid-area: main;
-}
-
-footer{
-    grid-area: footer;
-}
-
-/* MOBILE */
-
-header{
     background-image: linear-gradient(to bottom, #232526, #414345);
     display: flex;
     flex-direction: row;
@@ -679,10 +665,6 @@ ul{
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     transition: font-weight 2;
-}
-
-.linkNav:hover{
-    font-weight: bold;
 }
 
 /* INDEX */
