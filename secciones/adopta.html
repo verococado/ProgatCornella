@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/style.css">
     <title>Document</title>
 </head>
@@ -11,14 +12,20 @@
 <div class="envoltura"></div>
     <header>
         <img class="logo" src="../imagenes/logoBlanco.png" alt="logoProgatCornella">
-        <nav>
-            <ul>
-                <li><a class="linkNav" href="../index.html">Inicio</a></li>
-                <li><a class="linkNav" href="./noticias.html">Noticias</a></li>
-                <li><a class="linkNav" href="./adopta.html">Adopta</a></li>
-                <li><a class="linkNav" href="./colabora.html">Colabora</a></li>
-                <li><a class="linkNav" href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid" >
+            <a class="navbar-brand"  href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse linkNav" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link linkHover" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link linkHover" href="./noticias.html">Noticias</a></li>
+                <li class="nav-item"><a class="nav-link linkHover" aria-current="page" href="./adopta.html">Adopta</a></li>
+                <li class="nav-item"><a class="nav-link linkHover" href="./colabora.html">Colabora</a></li>
+                <li class="nav-item"><a class="nav-link linkHover" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -34,29 +41,37 @@
                 Se realiza un contrato de adopción y se hace seguimiento.
                     
                 La adopción tiene un coste: en el precio se incluyen los tests de leucemia y  inmunodeficiencia, las vacunas, la desparasitación y la esterilización. Este importe cubre los gastos básicos que siempre se tendrán que asumir al acoger a un nuevo miembro felino en la familia.</p>
-                <a class="adoptaenlace" href="https://docs.google.com/forms/d/1wqO4kcls4wV8IGHpsTcL_M8XeXyORVFVqwPu0EZsDWU/edit?chromeless=1#response=ACYDBNh-Fm6o2wrkqM839tzxYJU_GdsiJ2AtmBcvYm_W519VeDHpLN5BkBO-d9xD3UvkHSA">Rellena nuestro formulario para adoptantes</a>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary button" href="https://www.teaming.net/progatcornella" type="button">Rellena nuestro cuestionario para ser adoptar</button>
+                </div>            
             </article>
         </section>
         <section class="gatosgrid">
             <h2 class="conoce">Conoce a nuestros gatos</h2>
-            <article class="gato1">
-                <img class="imggato"src="../imagenes/gatoTricolor.JPG" alt="gatoTricolorBlancoNaranjaNegro">
-                <h3 class="gatoname">Rayanne</h3>
-                <h4 class="gatoinfo">4 años - Recogida de la calle</h4>
-                <p class="gatostory">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis culpa necessitatibus enim ad dolore! Eaque enim dolor, dignissimos perferendis, adipisci quia provident non sequi veniam nam error ratione odit at!</p>
-            </article>
-            <article class="gato2">
-                <img class="imggato" src="../imagenes/josi.JPG" alt="joseGatoNaranja">
-                <h3 class="gatoname">Josi</h3>
-                <h4 class="gatoinfo">2 años - Nació en Progat Cornellà</h4>
-                <p class="gatostory">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eligendi. Laborum at magnam ducimus suscipit ipsa aspernatur, modi fugit? Et blanditiis nulla adipisci magni, tempore mollitia dolores sit asperiores aspernatur.</p>
-            </article>
-            <article class="gato3">
-                <img class="imggato" src="../imagenes/svein.JPG" alt="sveinGatoGordoBlanco">
-                <h3 class="gatoname">Svein</h3>
-                <h4 class="gatoinfo">6 años - Abandonado</h4>
-                <p class="gatostory">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ea ipsum eaque incidunt provident, iusto neque distinctio quae quam doloribus, aliquid fuga ipsa accusantium omnis minima modi? Ut, fugiat quod.</p>
-            </article>
+            <div class="card gato1" style="width: 18rem;">
+                <img src="../imagenes/gatoTricolor.JPG" class="card-img-top" alt="gatoTricolorBlancoNaranjaNegro">
+                <div class="card-body">
+                <h5 class="card-title">Rayanne</h5>
+                <h6 class="card-title">4 años - Recogida de la calle</h6>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, minima cumque perferendis molestias alias placeat adipisci saepe consequatur impedit labore velit distinctio numquam consequuntur veniam soluta cupiditate. Doloremque, temporibus excepturi.</p>
+                </div>
+            </div>
+            <div class="card gato2" style="width: 18rem;">
+                <img src="../imagenes/josi.JPG" class="card-img-top" alt="joseGatoNaranja">
+                <div class="card-body">
+                <h5 class="card-title">Josi</h5>
+                <h6 class="card-title">2 años - Nació en Progat Cornellà</h6>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, quaerat. Blanditiis omnis minus temporibus facere fuga iste obcaecati in aliquam aliquid, neque rem praesentium nisi nobis atque ut voluptatem dolore?</p>
+                </div>
+            </div>
+            <div class="card gato3" style="width: 18rem;">
+                <img src="../imagenes/svein.JPG" class="card-img-top" alt="sveinGatoGordoBlanco">
+                <div class="card-body">
+                <h5 class="card-title">Svein</h5>
+                <h6 class="card-title">6 años - Abandonado</h6>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates accusantium eum quos illum molestias nobis eos veniam velit sunt ex. Nihil quam architecto est in nulla corporis ullam nisi maiores!</p>
+                </div>
+            </div>
         </section>
     </main>    
     <footer>
