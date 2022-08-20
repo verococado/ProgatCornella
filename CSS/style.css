@@ -21,36 +21,21 @@ footer{
 
 header{
     background-image: linear-gradient(to bottom, #232526, #414345);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .logo{
-    width: 10%;
-    height: 10%;
-    margin: 10px;
+    width: 50%;
 }
 
-nav{
-    width: 100%;
-}
-
-ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.linkNav{
-    align-content: space-around;
+.navbar .nav-item .nav-link{
     color: white;
     text-transform: uppercase;
-    text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
+    display: flex;
+    justify-content: end;
 }
+
 
 /* INDEX */
 
@@ -148,6 +133,7 @@ ul{
     flex-direction: column;
     align-items: center;
     padding: 10% 5%;
+    margin-bottom: 25%;
 }
 
 .imggato{
@@ -160,6 +146,7 @@ ul{
 .contactogrid{
     display: grid;
     grid-template-columns: 1fr;
+    margin-bottom: 25%;
 }
 
 .colaboraflex{
@@ -222,6 +209,8 @@ ul{
 
 .noticia{
     justify-content: center;
+    margin: 5%;
+    margin-bottom: 25%;
 }
 
 /* FOOTER */
@@ -240,7 +229,7 @@ footer{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin: 10px 20px;
     font-family: 'Roboto', sans-serif;
@@ -253,8 +242,8 @@ footer{
     height: 30px;
 }
 
-.localizacionTexto{
-    width: 30px;
+.localizacionSitio{
+    align-content: center;
 }
 
 .redes{
@@ -282,46 +271,22 @@ footer{
     }
 
     header{
-        background-image: linear-gradient(to bottom, #232526, #414345);        display: flex;
-        flex-direction: row;
-        align-items: center;
+        background-image: linear-gradient(to bottom, #232526, #414345); 
     }
     
     .logo{
-        width: 10%;
-        height: 10%;
-        margin: 10px;
+        width: 50%;
     }
     
-    nav{
-        width: 100%;
-    }
-    
-    ul{
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
-    .linkNav{
-        align-content: space-around;
+    .navbar .nav-item .nav-link{
         color: white;
         text-transform: uppercase;
-        text-decoration: none;
         font-family: 'Roboto', sans-serif;
         font-weight: lighter;
+        display: flex;
+        justify-content: end;
     }
-
-    .linkHover{
-        transform: 2sg;
-        color: white;
-    }
-
-    .linkHover:hover{
-        text-transform: bold;
-
-    }
+    
     
     /* INDEX */
     
@@ -495,6 +460,7 @@ footer{
         justify-content: center;
         grid-column: 1fr 1fr;
         margin: 5%;
+        margin-bottom: 15%;
     }
     
     /* FOOTER */
@@ -553,48 +519,35 @@ footer{
         "footer" "footer" "footer";
     }
 
-
 header{
     background-image: linear-gradient(to bottom, #232526, #414345);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .logo{
-    width: 10%;
-    height: 10%;
-    margin: 10px;
+    width: 50%;
 }
 
 nav{
     width: 100%;
 }
 
-ul{
-    list-style: none;
+.navmenu{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: end;
 }
 
-.linkNav{
-    align-content: space-around;
+.nav-item .nav-link{
     color: white;
     text-transform: uppercase;
-    text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
+    transition: 2;
 }
 
-.linkHover .nav-link .navitem{
-    transform: 2sg;
-    color: white;
+.nav-item .nav-link:hover{
+    font-weight: bold;
 }
 
-.linkHover:hover{
-    text-transform: bold;
-}
 
 /* INDEX */
 
@@ -769,8 +722,15 @@ ul{
 .noticia{
     display: grid;
     justify-content: center;
+    grid-template-columns: 2fr 2fr;
     grid-column: 1fr 1fr;
-    margin: 5%;
+    grid-gap: 5%;
+    margin: 5% 15%;
+    margin-bottom: 10%;
+}
+
+.card-text{
+    font-family: 'Popins', sans-serif;
 }
 
 /* FOOTER */
@@ -786,12 +746,6 @@ footer{
 }
 
 .localizacion{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 10px 20px;
     font-family: 'Roboto', sans-serif;
     color: white;
     font-weight: 100;
