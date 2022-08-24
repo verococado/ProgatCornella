@@ -1,0 +1,49 @@
+@import "fuentes";
+@import "header";
+@import "index";
+@import "adopta";
+@import "colabora";
+@import "contacto";
+@import "noticias";
+@import "footer";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    grid-area: header;
+}
+
+.main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/* TABLET */
+@media (min-width:768px){
+    .envoltura{
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header" "header"
+        "main" "main"
+        "footer" "footer";
+    }
+}
+
+/* DESKTOP  */
+@media (min-width:1024px){
+    .envoltura{
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "header" "header" "header"
+        "main" "main" "main"
+        "footer" "footer" "footer";
+    }
+}
+

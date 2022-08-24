@@ -1,0 +1,131 @@
+/* MOBILE */
+
+.titular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+
+    h1{
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        margin-bottom: 5%;
+    }
+
+    img{
+        width:250px;
+        height: 250px;
+        margin-bottom: 5%;
+    }
+
+    p{
+        font-family: 'Popins', sans-serif;
+    }
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+    /* TABLET */
+
+@media (min-width:768px){
+    
+    .titular{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+
+        h1{
+            grid-column: 2;
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+        }
+
+        img{
+            grid-column: 1;
+            width: 400px;
+            height: 400px;
+        }
+
+        p{
+            grid-column: 2;
+            font-family: 'Popins', sans-serif;
+        }
+    }
+    
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        justify-content: center;
+        align-items: center;
+        margin: 10%;
+        padding-bottom: 20px;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width:1024px){
+
+.titular{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr ;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    h1{
+        grid-column: 3;
+        font-family: 'Roboto', sans-serif;
+        font-size: 50px;
+    }
+
+    img{
+        grid-column: 2;
+        width: 500px;
+        height: 500px;
+    }
+
+    p{
+        grid-column: 3;
+        font-family: 'Popins', sans-serif;
+    }
+}
+
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 20%;
+    padding-bottom: 20px;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+}
