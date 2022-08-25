@@ -7,8 +7,8 @@
     margin: 10%;
 
     h1{
-        font-family: 'Roboto', sans-serif;
-        font-size: 30px;
+        font-family: $title;
+        font-size: $titleSizeMobile;
         margin-bottom: 5%;
     }
 
@@ -19,7 +19,7 @@
     }
 
     p{
-        font-family: 'Popins', sans-serif;
+        font-family: $text;
     }
 }
 
@@ -51,8 +51,8 @@
 
         h1{
             grid-column: 2;
-            font-family: 'Roboto', sans-serif;
-            font-size: 50px;
+            font-family: $title;
+            font-size: $titleSize;
         }
 
         img{
@@ -63,7 +63,7 @@
 
         p{
             grid-column: 2;
-            font-family: 'Popins', sans-serif;
+            font-family: $text;
         }
     }
     
@@ -97,8 +97,8 @@
 
     h1{
         grid-column: 3;
-        font-family: 'Roboto', sans-serif;
-        font-size: 50px;
+        font-family: $title;
+        font-size: $titleSize;
     }
 
     img{
@@ -109,7 +109,7 @@
 
     p{
         grid-column: 3;
-        font-family: 'Popins', sans-serif;
+        font-family: $text;
     }
 }
 

@@ -1,6 +1,5 @@
 /* MOBILE */
 
-
 .contactogrid{
     display: grid;
     grid-template-columns: 1fr;
@@ -15,20 +14,20 @@
     margin: 10%;
     grid-column: 1;
 
-    h2{
-        font-family: 'Roboto', sans-serif;
-        font-size: 25px;
+    h1{
+        font-family: $title;
+        font-size: $titleSizeMobile;
         margin-bottom: 5%;
     }
 
-    h3{
-        font-family: 'Roboto', sans-serif;
-        font-size: 25px;
+    h2{
+        font-family: $subtitle;
+        font-size: $subtitleSizeMobile;
         margin-bottom: 5%;
     }
 
     p{
-        font-family: 'Popins', sans-serif;
+        font-family: $text;
         margin-bottom: 10px;
 }
 }
@@ -50,19 +49,19 @@
         margin: 5%;
         grid-column: 1;
 
-        h2{
-            font-family: 'Roboto', sans-serif;
-            font-size: 50px;
+        h1{
+            font-family: $title;
+            font-size: $titleSize;
         }
 
-        h3{
-            font-family: 'Roboto', sans-serif;
-            font-size: 25px;
+        h2{
+            font-family: $subtitle;
+            font-size: $subtitleSize;
             margin-bottom: 5%;
         }
     
         p{
-            font-family: 'Popins', sans-serif;
+            font-family: $text;
     }
     }
 }
@@ -84,19 +83,19 @@
         margin: 10%;
         grid-column: 2;
 
-        h2{
-            font-family: 'Roboto', sans-serif;
-            font-size: 50px;
+        h1{
+            font-family: $title;
+            font-size: $titleSize;
         }
 
-        h3{
-            font-family: 'Roboto', sans-serif;
-            font-size: 25px;
+        h2{
+            font-family: $subtitle;
+            font-size: $subtitleSize;
             margin-bottom: 5%;
         }
     
         p{
-            font-family: 'Popins', sans-serif;
+            font-family: $text;
     }
     }
 }
