@@ -14,12 +14,14 @@ footer{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin: 10px 20px;
     font-family: 'Roboto', sans-serif;
     color: white;
     font-weight: 100;
+
+    @media (min-width:768px) {
+        justify-content: flex-start;
+    }
 }
 
 .localizacionIcono{
@@ -29,6 +31,10 @@ footer{
 
 .localizacionSitio{
     align-content: center;
+}
+
+.localizacionTexto{
+    width: 30px;
 }
 
 .redes{
@@ -42,98 +48,4 @@ footer{
     width: 30px;
     height: 30px;
     margin: 10px 20px;
-}
-
-/* TABLET */
-
-@media (min-width:768px){
-
-    footer{
-        width: 100%;
-        background-image: $gradientfooter;
-        display: flex;
-        flex-direction: row;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-    }
-    
-    .localizacion{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 10px 20px;
-        font-family: 'Roboto', sans-serif;
-        color: white;
-        font-weight: 100;
-    }
-    
-    .localizacionIcono{
-        width: 30px;
-        height: 30px;
-    }
-    
-    .localizacionTexto{
-        width: 30px;
-    }
-    
-    .redes{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    
-    .redesSociales{
-        width: 30px;
-        height: 30px;
-        margin: 10px 20px;
-    }
-}
-
-/* DESKTOP  */
-
-@media (min-width:1024px){
-
-    footer{
-        width: 100%;
-        background-image: $gradientfooter;
-        display: flex;
-        flex-direction: row;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-    }
-    
-    .localizacion{
-        font-family: 'Roboto', sans-serif;
-        color: white;
-        font-weight: 100;
-    }
-    
-    .localizacionIcono{
-        width: 30px;
-        height: 30px;
-    }
-    
-    .localizacionTexto{
-        width: 30px;
-    }
-    
-    .redes{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    
-    .redesSociales{
-        width: 30px;
-        height: 30px;
-        margin: 10px 20px;
-    }
-    
-
 }

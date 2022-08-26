@@ -1,5 +1,3 @@
-/* MOBILE */
-
 .contactgrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -13,6 +11,23 @@
         font-size: $titleSizeMobile;
         margin-bottom: 10%;
     }
+
+    @media (min-width:768px){
+        grid-template-columns: 1fr 2fr;
+        margin: 5% 10%;
+
+        h1{
+            font-size: $titleSize;
+        }
+    }
+
+    @media (min-width:1024px){
+        grid-template-columns: 1fr 3fr;
+
+        h1{
+            grid-column: 2;
+        }
+    }
 }
 
 .cuesmotivo{
@@ -21,58 +36,4 @@
 
 .marcar{
     grid-column: 2;
-}
-
-/* TABLET */
-
-@media (min-width:768px){
-    
-    .contactgrid{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        margin: 5% 10%;
-        grid-gap: 10px;
-
-        h1{
-            grid-column: 1 / 3;
-            font-family: $title;
-            font-size: $titleSize;
-            margin-bottom: 10%;
-        }
-    }
-
-    .cuesmotivo{
-        grid-column: 1 / 3;
-    }
-    
-    .marcar{
-        grid-column: 2;
-    }
-}
-
-/* DESKTOP */
-
-@media (min-width:1024px){
-
-    .contactgrid{
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        margin: 5% 15%;
-        grid-gap: 10px;
-
-        h1{
-            grid-column: 2;
-            font-family: $title;
-            font-size: $titleSize;
-            margin-bottom: 10%;
-        }
-    }
-
-    .cuesmotivo{
-        grid-column: 1 / 3;
-    }
-    
-    .marcar{
-        grid-column: 2;
-    }
 }

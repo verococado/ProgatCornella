@@ -1,9 +1,11 @@
-/* MOBILE */
-
 .contactogrid{
     display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 25%;
+
+    @media (min-width:1024px){
+        grid-template-columns: 1fr 4fr 1fr;
+    }
 }
 
 .colaboraflex{
@@ -29,73 +31,26 @@
     p{
         font-family: $text;
         margin-bottom: 10px;
-}
-}
-
-/* TABLET */
-
-@media (min-width:768px){
-    
-    .contactogrid{
-        display: grid;
-        grid-template-columns: 1fr;
     }
-    
-    .colaboraflex{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
+    @media (min-width:768px){
         margin: 5%;
-        grid-column: 1;
 
         h1{
-            font-family: $title;
             font-size: $titleSize;
         }
 
         h2{
-            font-family: $subtitle;
             font-size: $subtitleSize;
-            margin-bottom: 5%;
         }
-    
-        p{
-            font-family: $text;
     }
-    }
-}
-    
-/* DESKTOP */
-    
-@media (min-width:1024px){
-    
-    .contactogrid{
-        display: grid;
-        grid-template-columns: 1fr 4fr 1fr;
-    }
-    
-    .colaboraflex{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 10%;
+
+    @media (min-width:1024px){
         grid-column: 2;
-
-        h1{
-            font-family: $title;
             font-size: $titleSize;
-        }
 
         h2{
-            font-family: $subtitle;
-            font-size: $subtitleSize;
             margin-bottom: 5%;
         }
-    
-        p{
-            font-family: $text;
-    }
     }
 }

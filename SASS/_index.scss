@@ -1,5 +1,3 @@
-/* MOBILE */
-
 .titular{
     display: flex;
     flex-direction: column;
@@ -21,37 +19,16 @@
     p{
         font-family: $text;
     }
-}
 
-.galeria{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
-    justify-content: center;
-    align-items: center;
-    margin: 5%;
-
-    img{
-        width: 100%;
-        height: 100%;
-    }
-}
-
-    /* TABLET */
-
-@media (min-width:768px){
-    
-    .titular{
+    @media (min-width:768px){
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-gap: 10px;
         justify-content: center;
         align-items: center;
-        margin-top: 10%;
 
         h1{
             grid-column: 2;
-            font-family: $title;
             font-size: $titleSize;
         }
 
@@ -63,69 +40,54 @@
 
         p{
             grid-column: 2;
-            font-family: $text;
         }
     }
-    
-    .galeria{
+
+    @media (min-width:1024px){
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 5px;
-        justify-content: center;
-        align-items: center;
-        margin: 10%;
-        padding-bottom: 20px;
-
+        grid-template-columns: 1fr 2fr 1fr 1fr ;
+        margin-top: 50px;
+        
+        h1{
+            grid-column: 3;
+        }
+    
         img{
-            width: 100%;
-            height: 100%;
+            grid-column: 2;
+            width: 500px;
+            height: 500px;
+        }
+    
+        p{
+            grid-column: 3;
         }
     }
+
 }
-
-/* DESKTOP */
-
-@media (min-width:1024px){
-
-.titular{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr ;
-    grid-gap: 10px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-
-    h1{
-        grid-column: 3;
-        font-family: $title;
-        font-size: $titleSize;
-    }
-
-    img{
-        grid-column: 2;
-        width: 500px;
-        height: 500px;
-    }
-
-    p{
-        grid-column: 3;
-        font-family: $text;
-    }
-}
-
 
 .galeria{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
     justify-content: center;
     align-items: center;
-    margin: 50px 20%;
-    padding-bottom: 20px;
+    margin-bottom: 50%;
 
     img{
         width: 100%;
         height: 100%;
     }
-}
+
+    @media (min-width:768px){
+        margin: 10%;
+    }
+
+    @media (min-width:1024px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 20%;
+    }
 }
