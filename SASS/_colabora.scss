@@ -47,8 +47,10 @@
 
     @media (min-width:1024px){
         grid-column: 2;
-            font-size: $titleSize;
 
+        h1{
+            font-size: $titleSize;
+        }
         h2{
             margin-bottom: 5%;
         }

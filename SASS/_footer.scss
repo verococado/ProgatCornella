@@ -25,8 +25,7 @@ footer{
 }
 
 .localizacionIcono{
-    width: 30px;
-    height: 30px;
+    @include sizes (30px, 30px);
 }
 
 .localizacionSitio{
@@ -45,7 +44,6 @@ footer{
 }
 
 .redesSociales{
-    width: 30px;
-    height: 30px;
+@include sizes (30px, 30px);
     margin: 10px 20px;
 }

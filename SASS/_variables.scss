@@ -15,3 +15,8 @@ $subtitleSizeMobile: 25px;
 /*TABLET&DESKTOP*/
 $titleSize: 50px;
 $subtitleSize: 30px;
+
+@mixin sizes ($width, $height){
+    width: $width;
+    height: $height;
+}
