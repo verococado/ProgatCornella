@@ -1,39 +1,31 @@
-/* MOBILE */
-
 footer{
-    width: 100%;
-    background-image: $gradientfooter;
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    background-color: $blue1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .localizacion{
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin: 10px 20px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-weight: 100;
+    align-items: center;
+    padding-left: 5%;
+
+    img{
+        @include sizes (30px, 30px);
+    }
+
+    p{
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        color: black;
+        padding-top: 1rem;
+    }
 
     @media (min-width:768px) {
         justify-content: flex-start;
     }
-}
-
-.localizacionIcono{
-    @include sizes (30px, 30px);
-}
-
-.localizacionSitio{
-    align-content: center;
-}
-
-.localizacionTexto{
-    width: 30px;
 }
 
 .redes{
@@ -41,9 +33,12 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-}
 
-.redesSociales{
-@include sizes (30px, 30px);
-    margin: 10px 20px;
+    a{
+        margin: 20px;
+    }
+
+    img{
+        @include sizes (30px, 30px);
+    }
 }

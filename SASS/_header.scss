@@ -1,26 +1,29 @@
 header{
-    background-image: $gradientheader;
+    background-color: $yellow1;
+    width: 100%;
+    position: fixed;
 }
 
 .logo{
-    width: 50%;
+    width: 75%;
+    padding-left: 10%;
 }
 
-.navbar .nav-item .nav-link{
-    color: white;
+.navbar-nav .nav-item .nav-link{
+    color: black;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-    font-weight: lighter;
     display: flex;
     justify-content: end;
+    padding-right: 5%;
 
-    @media (min-width:700){
+    @media (min-width:700px){
         justify-content: flex-end;
     }
 
     @media (min-width:1024px){
         ul:hover{
-            color: white;
+            font-weight: bolder;
         }
 }
 }

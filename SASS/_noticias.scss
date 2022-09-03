@@ -1,21 +1,16 @@
 .noticia{
     justify-content: center;
-    margin: 5%;
-    margin-bottom: 25%;
 
     @media (min-width:768px){
         display: grid;
         justify-content: center;
         grid-column: 1fr 1fr;
-        margin-bottom: 15%;
     }
 
     @media (min-width:1024px){
         grid-template-columns: 2fr 2fr;
         grid-column: 1fr 1fr;
         grid-gap: 5%;
-        margin: 5% 15%;
-        margin-bottom: 10%;
     }∫
         
 .card-text{

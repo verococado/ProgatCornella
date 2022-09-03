@@ -3,29 +3,32 @@
 /*TABLET&DESKTOP*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Roboto:wght@100;400;700&display=swap");
 header {
-  background-image: linear-gradient(to bottom, #232526, #414345);
+  background-color: #FFFD85;
+  width: 100%;
+  position: fixed;
 }
 
 .logo {
-  width: 50%;
+  width: 75%;
+  padding-left: 10%;
 }
 
-.navbar .nav-item .nav-link {
-  color: white;
+.navbar-nav .nav-item .nav-link {
+  color: black;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
-  font-weight: lighter;
   display: flex;
   justify-content: end;
+  padding-right: 5%;
 }
-@media (min-width: 700) {
-  .navbar .nav-item .nav-link {
+@media (min-width: 700px) {
+  .navbar-nav .nav-item .nav-link {
     justify-content: flex-end;
   }
 }
 @media (min-width: 1024px) {
-  .navbar .nav-item .nav-link ul:hover {
-    color: white;
+  .navbar-nav .nav-item .nav-link ul:hover {
+    font-weight: bolder;
   }
 }
 
@@ -39,62 +42,177 @@ header {
 }
 
 .titular {
+  background-image: url("../imagenes/topYellow.png");
+  background-size: 100% 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10%;
+  padding-top: 15%;
 }
 .titular h1 {
   font-family: "Roboto" sans-serif;
   font-size: 30px;
   margin-bottom: 5%;
+  text-align: center;
 }
 .titular img {
-  width: 250px;
-  height: 250px;
-  margin-bottom: 5%;
-}
-.titular p {
-  font-family: "Popins", sans-serif;
+  width: 50%;
+  height: 50%;
 }
 @media (min-width: 768px) {
   .titular {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
     justify-content: center;
     align-items: center;
+    padding-top: 5%;
   }
   .titular h1 {
     grid-column: 2;
     font-size: 50px;
+    padding: 10%;
   }
   .titular img {
-    grid-column: 1;
-    width: 400px;
-    height: 400px;
-  }
-  .titular p {
-    grid-column: 2;
+    grid-column: 3;
+    width: 100%;
+    height: 100%;
+    padding: 5%;
   }
 }
 @media (min-width: 1024px) {
   .titular {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr;
-    margin-top: 50px;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    padding-top: 5%;
   }
   .titular h1 {
-    grid-column: 3;
+    grid-column: 2;
+    padding: 10%;
   }
   .titular img {
-    grid-column: 2;
-    width: 500px;
-    height: 500px;
-  }
-  .titular p {
     grid-column: 3;
+    width: 100%;
+    height: 100%;
+    padding: 5%;
   }
+}
+
+.who {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0% 10%;
+  margin: 5%;
+}
+.who h2 {
+  font-family: "Roboto" sans-serif uppercase;
+  margin-bottom: 5%;
+}
+.who img {
+  width: 50%;
+  height: 50%;
+  flex-direction: row;
+  border-radius: 2%;
+}
+.who p {
+  font-family: "Popins", sans-serif;
+  text-align: justify;
+  flex-direction: row;
+}
+.who button {
+  grid-column: 2;
+  grid-row: 3;
+  background-color: #157977;
+  width: 50%;
+  border-radius: 12px;
+  border: none;
+  margin-bottom: 5%;
+}
+@media (min-width: 1024px) {
+  .who {
+    display: grid;
+    margin: 5% 10%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3;
+    grid-gap: 5%;
+  }
+  .who h2 {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+  }
+  .who img {
+    grid-column: 1;
+    grid-row: 1/4;
+    width: 100%;
+    height: 100%;
+  }
+  .who p {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .who button {
+    grid-column: 2;
+    grid-row: 3;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+.options {
+  margin: 0% 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2%;
+  justify-content: center;
+}
+.options h2 {
+  font-family: "Roboto" sans-serif uppercase;
+  text-align: center;
+  grid-column: 1/4;
+  padding: 2%;
+}
+.options button {
+  grid-column: 2;
+  background-color: #157977;
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  margin: 5%;
+  align-self: center;
+  justify-self: center;
+}
+.options .optionSocio, .options .optionDonate, .options .optionTeamer {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset;
+  align-items: center;
+  background-color: white;
+  box-shadow: 5px 5px #EBEBEB;
+  border-radius: 2%;
+}
+.options .optionSocio h3, .options .optionDonate h3, .options .optionTeamer h3 {
+  text-align: center;
+  padding: 10% 5% 10% 5%;
+}
+.options .optionSocio img, .options .optionDonate img, .options .optionTeamer img {
+  width: 30%;
+  height: 30%;
+  padding: 5%;
+  background-color: #70D3D1;
+  border-radius: 100%;
+}
+.options .optionSocio p, .options .optionDonate p, .options .optionTeamer p {
+  padding: 10%;
+  text-align: center;
+}
+.options .optionTeamer {
+  grid-column: 2;
+}
+.options .optionDonate {
+  grid-column: 3;
 }
 
 .galeria {
@@ -103,11 +221,13 @@ header {
   grid-gap: 5px;
   justify-content: center;
   align-items: center;
+  margin: 0% 10%;
   margin-bottom: 25%;
 }
 .galeria img {
   width: 100%;
   height: 100%;
+  border-radius: 2%;
 }
 @media (min-width: 768px) {
   .galeria {
@@ -117,11 +237,12 @@ header {
 @media (min-width: 1024px) {
   .galeria {
     display: grid;
+    margin: 5% 10%;
+    margin: 10%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     justify-content: center;
     align-items: center;
-    margin: 50px 20%;
   }
 }
 
@@ -130,7 +251,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10%;
 }
 .adoptaflex h1 {
   font-family: "Roboto" sans-serif;
@@ -142,18 +262,12 @@ header {
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
-  .adoptaflex {
-    margin: 5%;
-  }
   .adoptaflex h1 {
     font-size: 50px;
     margin-bottom: 5%;
   }
 }
 @media (min-width: 1024px) {
-  .adoptaflex {
-    margin: 10%;
-  }
   .adoptaflex h2 {
     font-size: 50px;
     margin-bottom: 10px;
@@ -292,21 +406,16 @@ header {
 .contactgrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 5% 15%;
   grid-gap: 10px;
-  margin: 10%;
-  margin-bottom: 25%;
 }
 .contactgrid h1 {
   grid-column: 1/3;
   font-family: "Roboto" sans-serif;
   font-size: 30px;
-  margin-bottom: 10%;
 }
 @media (min-width: 768px) {
   .contactgrid {
     grid-template-columns: 1fr 2fr;
-    margin: 5% 10%;
   }
   .contactgrid h1 {
     font-size: 50px;
@@ -331,15 +440,12 @@ header {
 
 .noticia {
   justify-content: center;
-  margin: 5%;
-  margin-bottom: 25%;
 }
 @media (min-width: 768px) {
   .noticia {
     display: grid;
     justify-content: center;
     grid-column: 1fr 1fr;
-    margin-bottom: 15%;
   }
 }
 @media (min-width: 1024px) {
@@ -347,51 +453,40 @@ header {
     grid-template-columns: 2fr 2fr;
     grid-column: 1fr 1fr;
     grid-gap: 5%;
-    margin: 5% 15%;
-    margin-bottom: 10%;
   }
 }
 .noticia ∫ .card-text {
   font-family: "Popins", sans-serif;
 }
 
-/* MOBILE */
 footer {
-  width: 100%;
-  background-image: linear-gradient(to top, #232526, #414345);
-  display: flex;
-  flex-direction: row;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  background-color: #70D3D1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .localizacion {
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin: 10px 20px;
+  align-items: center;
+  padding-left: 5%;
+}
+.localizacion img {
+  width: 30px;
+  height: 30px;
+}
+.localizacion p {
   font-family: "Roboto", sans-serif;
-  color: white;
-  font-weight: 100;
+  text-transform: uppercase;
+  color: black;
+  padding-top: 1rem;
 }
 @media (min-width: 768px) {
   .localizacion {
     justify-content: flex-start;
   }
-}
-
-.localizacionIcono {
-  width: 30px;
-  height: 30px;
-}
-
-.localizacionSitio {
-  align-content: center;
-}
-
-.localizacionTexto {
-  width: 30px;
 }
 
 .redes {
@@ -400,14 +495,19 @@ footer {
   flex-direction: row;
   justify-content: flex-end;
 }
-
-.redesSociales {
+.redes a {
+  margin: 20px;
+}
+.redes img {
   width: 30px;
   height: 30px;
-  margin: 10px 20px;
 }
 
 * {
   padding: 0;
   margin: 0;
+}
+
+body {
+  background-color: #FDFDFB;
 }/*# sourceMappingURL=estilos.css.map */
