@@ -3,22 +3,37 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15%;
+    margin: $lateralSmall;
+    padding-bottom: 10%;
 
     h1{
         font-family: $title;
         font-size: $titleSizeMobile;
+        padding-top: 30%;
+        padding-bottom: 5%;
     }
 
     p{
         font-family: $text;
         margin-bottom: 10px;
+        padding-bottom: 5%;
+    }
+
+    button{
+        background-color: $blue2;
+        width: $smallButton;
+        border-radius: 12px;
+        border: none;
+        align-self: center;
+        justify-self: center;
     }
 
     @media (min-width:768px){
+        margin: $lateralMargin;
 
         h1{
             font-size: $titleSize;
+            padding-top: 15%;
         }
     }
 
@@ -27,6 +42,7 @@
         h2{
             font-size: $titleSize;
             margin-bottom: 10px;
+            padding-top: 5%;
         }
     }
 }
@@ -36,6 +52,9 @@
     grid-template-columns: 1fr;
     grid-gap: 10px;
     padding-bottom: 10%;
+    justify-content: center;
+    align-items: center;
+    margin: $lateralMargin;
 
     h2{
         display: flex;
@@ -43,21 +62,12 @@
         font-family: $subtitle;
     }
 
-    @media (min-width:768px){
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 5px;
-
-        h2{
-            grid-column: 1 / 3;
-        }
-    }
-
     @media (min-width:1024px){
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 10px;
 
         h2{
-            grid-column: 2;
+            grid-column: 1 / 4;
         }
     }
 }
@@ -66,36 +76,44 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10% 5%;
-
-    @media (min-width:768px){
-        grid-column: 1;
-    }
+    box-shadow: inset;
+    align-items: center;
+    background-color: white;
+    box-shadow: $boxShadow;
+    border-radius: 2%;
+    margin: 5% 0%; 
 
     @media (min-width:1024px){
         grid-column: 1;
     }
 }
 
-.gato1--gato2{
-    @extend .gato1;
-
-    @media (min-width:768px){
-        grid-column: 2;
-    }
+.gato2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset;
+    align-items: center;
+    background-color: white;
+    box-shadow: $boxShadow;
+    border-radius: 2%;
+    margin: 5% 0%; 
 
     @media (min-width:1024px){
         grid-column: 2;
     }
 }
 
-.gato1--gato3{
-    @extend .gato1;
-    margin-bottom: 25%;
-
-    @media (min-width:768px){
-        grid-column: 3;
-    }
+.gato3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset;
+    align-items: center;
+    background-color: white;
+    box-shadow: $boxShadow;
+    border-radius: 2%;
+    margin: 5% 0%; 
 
     @media (min-width:1024px){
         grid-column: 3;
