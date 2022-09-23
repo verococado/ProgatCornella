@@ -51,3 +51,9 @@
 .marcar{
     grid-column: 2;
 }
+
+.btn-primary:hover {
+    color: #fff;
+    background-color:$blue1;
+    border-color: $blue1;
+}

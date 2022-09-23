@@ -5,6 +5,7 @@ header {
   background-color: #FFFD85;
   width: 100%;
   position: fixed;
+  z-index: 6666;
 }
 
 .logo {
@@ -103,7 +104,7 @@ header {
   justify-content: center;
   align-items: center;
   margin: 0% 10%;
-  margin: 5%;
+  padding: 5% 0%;
 }
 .who h2 {
   font-family: "Roboto" sans-serif uppercase;
@@ -123,7 +124,7 @@ header {
 .who button {
   grid-column: 2;
   grid-row: 3;
-  background-color: #157977;
+  background-color: #3CC3C0;
   width: 200px;
   border-radius: 12px;
   border: none;
@@ -160,10 +161,17 @@ header {
   }
 }
 
+.btn-primary:hover {
+  color: #fff;
+  background-color: #70D3D1;
+  border-color: #70D3D1;
+}
+
 .options {
   display: flex;
   flex-direction: column;
   margin: 0% 10%;
+  padding: 5% 0%;
 }
 .options h2 {
   font-family: "Roboto" sans-serif uppercase;
@@ -173,12 +181,7 @@ header {
 .options .optionSocio, .options .optionDonate, .options .optionTeamer {
   display: flex;
   flex-direction: column;
-  box-shadow: inset;
   align-items: center;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 2%;
-  margin: 5% 0%;
 }
 .options .optionSocio h3, .options .optionDonate h3, .options .optionTeamer h3 {
   text-align: center;
@@ -194,6 +197,7 @@ header {
 .options .optionSocio p, .options .optionDonate p, .options .optionTeamer p {
   padding: 10%;
   text-align: center;
+  min-height: 150px;
 }
 @media (min-width: 768px) {
   .options {
@@ -205,6 +209,9 @@ header {
   }
   .options h2 {
     grid-column: 1/4;
+  }
+  .options p {
+    min-height: 250px;
   }
   .options .optionSocio, .options .optionTeamer, .options .optionDonate {
     grid-column: 1;
@@ -226,18 +233,22 @@ header {
   font-family: "Roboto" sans-serif uppercase;
   text-align: center;
   padding: 2%;
+  margin: 2% 0%;
 }
 .adopta p {
   font-family: "Popins", sans-serif;
-  padding: 2%;
+  padding: 0% 10%;
+  text-align: justify;
+  margin: 2% 0%;
 }
 .adopta button {
-  background-color: #157977;
+  background-color: #3CC3C0;
   width: 200px;
   border-radius: 12px;
   border: none;
   align-self: center;
   justify-self: center;
+  margin: 0% 0% 15% 0%;
 }
 
 .galeria {
@@ -245,28 +256,24 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0% 10%;
   margin-bottom: 10%;
-  margin-top: 10%;
 }
 .galeria img {
   width: 100%;
   height: 100%;
-  border-radius: 2%;
+  border-radius: 5%;
   padding: 2%;
 }
 @media (min-width: 749px) {
   .galeria {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
   }
 }
 @media (min-width: 1024px) {
   .galeria {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
     justify-content: center;
     align-items: center;
     margin-bottom: 5%;
@@ -279,7 +286,7 @@ header {
   justify-content: center;
   align-items: center;
   margin: 0% 10%;
-  padding-bottom: 10%;
+  padding-bottom: 5% 0%;
 }
 .adoptaflex h1 {
   font-family: "Roboto" sans-serif;
@@ -291,14 +298,7 @@ header {
   font-family: "Popins", sans-serif;
   margin-bottom: 10px;
   padding-bottom: 5%;
-}
-.adoptaflex button {
-  background-color: #157977;
-  width: 200px;
-  border-radius: 12px;
-  border: none;
-  align-self: center;
-  justify-self: center;
+  text-align: justify;
 }
 @media (min-width: 768px) {
   .adoptaflex {
@@ -308,6 +308,9 @@ header {
     font-size: 50px;
     padding-top: 15%;
   }
+  .adoptaflex p {
+    margin: 0% 10%;
+  }
 }
 @media (min-width: 1024px) {
   .adoptaflex h2 {
@@ -315,6 +318,47 @@ header {
     margin-bottom: 10px;
     padding-top: 5%;
   }
+}
+
+.accordion {
+  margin: 0% 10%;
+  padding: 2% 0%;
+}
+@media (min-width: 1024px) {
+  .accordion {
+    margin: 0% 10%;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #FFFEA8;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../imagenes/up.png);
+}
+
+.formularioAdopta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formularioAdopta button {
+  background-color: #3CC3C0;
+  width: 200px;
+  border-radius: 12px;
+  border: none;
+  align-self: center;
+  justify-self: center;
+  margin-top: 5%;
+  margin-bottom: 7%;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #70D3D1;
+  border-color: #70D3D1;
 }
 
 .gatosgrid {
@@ -352,6 +396,9 @@ header {
   border-radius: 2%;
   margin: 5% 0%;
 }
+.gato1 p {
+  min-height: 220px;
+}
 @media (min-width: 1024px) {
   .gato1 {
     grid-column: 1;
@@ -368,6 +415,9 @@ header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 2%;
   margin: 5% 0%;
+}
+.gato2 p {
+  min-height: 220px;
 }
 @media (min-width: 1024px) {
   .gato2 {
@@ -386,6 +436,9 @@ header {
   border-radius: 2%;
   margin: 5% 0%;
 }
+.gato3 p {
+  min-height: 220px;
+}
 @media (min-width: 1024px) {
   .gato3 {
     grid-column: 3;
@@ -393,13 +446,11 @@ header {
 }
 
 .contactogrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-bottom: 10%;
+  margin: 0% 10%;
 }
 @media (min-width: 1024px) {
   .contactogrid {
-    grid-template-columns: 1fr 4fr 1fr;
+    margin: 0% 10%;
   }
 }
 
@@ -408,38 +459,40 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10%;
   grid-column: 1;
 }
 .colaboraflex h1 {
   font-family: "Roboto" sans-serif;
   font-size: 30px;
   margin-bottom: 5%;
-  padding-top: 15%;
+  padding-top: 25%;
 }
 .colaboraflex h2 {
   font-family: "Roboto" sans-serif uppercase;
   font-size: 25px;
   margin-bottom: 5%;
 }
+.colaboraflex img {
+  width: 100%;
+  margin-bottom: 5%;
+}
 .colaboraflex p {
   font-family: "Popins", sans-serif;
-  margin-bottom: 10px;
+  margin: 0% 10%;
 }
 .colaboraflex button {
-  background-color: #157977;
+  background-color: #3CC3C0;
   width: 100px;
   border-radius: 12px;
   border: none;
   align-self: center;
   justify-self: center;
+  margin-bottom: 10%;
 }
 @media (min-width: 768px) {
-  .colaboraflex {
-    margin: 5%;
-  }
   .colaboraflex h1 {
     font-size: 50px;
+    padding-top: 15%;
   }
   .colaboraflex h2 {
     font-size: 30px;
@@ -449,15 +502,72 @@ header {
   }
 }
 @media (min-width: 1024px) {
-  .colaboraflex {
-    grid-column: 2;
-  }
   .colaboraflex h1 {
     font-size: 50px;
   }
   .colaboraflex h2 {
     margin-bottom: 5%;
   }
+}
+
+.categorias {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 0%;
+}
+.categorias h2 {
+  font-family: "Roboto" sans-serif uppercase;
+  text-align: center;
+  padding: 2%;
+}
+.categorias .categoriaSocio, .categorias .categoriaSimpatizanteDos, .categorias .categoriaSimpatizanteUno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+.categorias .categoriaSocio h3, .categorias .categoriaSimpatizanteDos h3, .categorias .categoriaSimpatizanteUno h3 {
+  text-align: center;
+  padding: 10% 5% 10% 5%;
+  min-height: 75px;
+}
+.categorias .categoriaSocio img, .categorias .categoriaSimpatizanteDos img, .categorias .categoriaSimpatizanteUno img {
+  width: 50%;
+  height: 50%;
+  padding: 5%;
+  background-color: #70D3D1;
+  border-radius: 100%;
+}
+.categorias .categoriaSocio p, .categorias .categoriaSimpatizanteDos p, .categorias .categoriaSimpatizanteUno p {
+  padding: 10%;
+  text-align: center;
+  min-height: 75px;
+}
+@media (min-width: 768px) {
+  .categorias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
+    justify-content: center;
+  }
+  .categorias h2 {
+    grid-column: 1/4;
+  }
+  .categorias .categoriaSocio, .categorias .categoriaSimpatizanteUno, .categorias .categoriaSimpatizanteDos {
+    grid-column: 1;
+  }
+  .categorias .categoriaSimpatizanteUno {
+    grid-column: 2;
+  }
+  .categorias .categoriaSimpatizanteDos {
+    grid-column: 3;
+  }
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #70D3D1;
+  border-color: #70D3D1;
 }
 
 .contactgrid {
@@ -475,7 +585,7 @@ header {
   text-align: center;
 }
 .contactgrid button {
-  background-color: #157977;
+  background-color: #3CC3C0;
   width: 100px;
   border-radius: 12px;
   border: none;
@@ -509,6 +619,12 @@ header {
 
 .marcar {
   grid-column: 2;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #70D3D1;
+  border-color: #70D3D1;
 }
 
 .noticia {
@@ -558,6 +674,9 @@ header {
   width: 100%;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .noticiasCon {
@@ -578,6 +697,12 @@ header {
   width: 30px;
   height: 30px;
   padding: 1%;
+}
+
+.noticiaText {
+  min-height: 200px;
+  text-align: justify;
+  font-family: "Popins", sans-serif;
 }
 
 footer {

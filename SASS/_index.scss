@@ -64,7 +64,7 @@
     justify-content: center;
     align-items: center;
     margin: $lateralSmall;
-    margin: 5%;
+    padding: $spaceSections;
 
 
     h2{
@@ -127,10 +127,17 @@
 }
 }
 
+.btn-primary:hover {
+    color: #fff;
+    background-color:$blue1;
+    border-color: $blue1;
+}
+
 .options{
     display: flex;
     flex-direction: column;
     margin: $lateralSmall;
+    padding: $spaceSections;
 
     h2{
         font-family: $subtitle;
@@ -141,12 +148,8 @@
     .optionSocio{
         display:flex;
         flex-direction: column;
-        box-shadow: inset;
         align-items: center;
-        background-color: white;
-        box-shadow: $boxShadow;
-        border-radius: 2%;
-        margin: 5% 0%;
+
 
         h3{
             text-align: center;
@@ -163,6 +166,7 @@
         p{
             padding: 10%;
             text-align: center;
+            min-height: 150px;
         }
     }
 
@@ -185,6 +189,10 @@
         grid-column: 1 / 4;
     }
 
+    p{
+        min-height: 250px;
+    }
+
     .optionSocio{
         grid-column: 1;
     }
@@ -202,17 +210,20 @@
 .adopta{
     display: flex;
     flex-direction: column;
-    margin: $lateralMargin;
+    margin: $lateralSmall;
 
     h2{
         font-family: $subtitle;
         text-align: center;
         padding: 2%;
+        margin: $spaceElements;
     }
 
     p{
         font-family: $text;
-        padding: 2%;
+        padding: $marginText;
+        text-align: justify;
+        margin: $spaceElements;
     }
 
     button{
@@ -222,35 +233,31 @@
         border: none;
         align-self: center;
         justify-self: center;
+        margin: $paddingBottom;
     }
 }
 
 .galeria{
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: $lateralMargin;
     margin-bottom: 10%;
-    margin-top: 10%;
 
     img{
         @include sizes (100%, 100%);
-        border-radius: 2%;
+        border-radius: 5%;
         padding: 2%;
         }
 
     @media (min-width:749px){
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
     }
 
     @media (min-width:1024px){
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr ;
-        grid-gap: 10px;
         justify-content: center;
         align-items: center;
         margin-bottom: 5%;

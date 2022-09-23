@@ -47,6 +47,8 @@
     width: 100%;
     border-top-left-radius: 2%;
     border-top-right-radius: 2%;
+    max-height: 300px;
+    object-fit: cover;
 }
 
 .noticiasCon{
@@ -68,4 +70,10 @@
 .redesSociales{
     @include sizes (30px, 30px);
     padding: 1%;
+}
+
+.noticiaText{
+    min-height: 200px;
+    text-align: justify;
+    font-family: $text;
 }
